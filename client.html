@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PORTFOLIOPAGE</title>
+		<link rel="stylesheet" href="css/styles.css" />
+</head>
+	
+	<body>
+		<div class="wrapper">
+			
+			<header class="header">
+				<div class="logo">
+					<img src="v.jpg" class="logo-image" alt="picture">
+				</div>
+				<div class="text">
+					<h1 class="main-text">VIZAG</h1>
+					<h3 class="sub-text">A CITY OF HEAVEN</h3>
+				</div>
+			</header>
+			<div class="hero"></div>		     
+			<section class="feautered">
+			<h2>A CITY OF HEAVEN</h2>
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+						<div class="numbertext">1 / 5</div>
+						<img src="v1.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+					<div class="numbertext">2 / 5</div>
+						<img src="v2.jpg" style="width:100%">
+						<div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+					<div class="numbertext">3 / 5</div>
+					<img src="v3.jpg" style="width:100%">
+					<div class="text"></div>
+					</div>
+					<div class="mySlides fade">
+					<div class="numbertext">3 / 5</div>
+					<img src="v5.jpg" style="width:100%">
+					<div class="text"></div>
+					</div>	
+					<div class="mySlides fade">
+					<div class="numbertext">3 / 5</div>
+					<img src="v7.jpg" style="width:100%">
+					<div class="text"></div>
+					</div>
+
+				</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 		
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+			</div>
+
+				<div class="features">
+					<div class="feature">
+						<a href="https://www.youtube.com/watch?v=3Sn8Ef6bs9g"><img src="v1.jpg" alt="RK BEACH" />
+						<h2>RK BEACH</h2>
+						
+					</div>
+					<div class="feature">
+					<a href="https://www.youtube.com/watch?v=sX6hVVOVqWE"><img src="v2.jpg" alt="steel-plant" />
+						<h2>STEEL PLANT </h2>
+					</div>
+					<div class="feature">
+					<a href="https://www.youtube.com/watch?v=_Be2AYJ2uJ4"><img src="v3.jpg" alt="ARAKU" />
+						<h2>ARAKU </h2>
+					</div>
+					<div class="feature">
+					<a href="https://www.youtube.com/watch?v=-HRCbys8SjU"><img src="v5.jpg" alt="KAILSAGIRI" />
+						<h2>KAILSAGIRI </h2>
+					</div>
+					<div class="feature">
+					<a href="https://www.youtube.com/watch?v=pYJGZPOLWW4"><img src="v7.jpg" alt="BORRA CAVES" />
+						<h2>BORRA CAVES</h2>
+					</div>
+				</div>
+			</section>
+			<article class="article">
+			  <h2>description</h2>
+				<p>
+					RK Beach also known as Ramakrishna Beach is situated on the East coast of Bay of Bengal in Visakhapatnam.
+					It is located near Dolphin's Nose.
+				</p>
+				<p>
+					The company has grown from a loss-making industry to 3-billion-dollar turnover company registering a growth of 203.6% in just four years. Vizag Steel Plant was conferred Navratna status on 17 November 2010.
+					Founded in 1971, the company focuses on producing value-added steel, with 214,000 tonnes produced in August 2010, out of 252,000 tonnes total of salable steel produced.
+					It is the largest single site plant in India and Asia minor (or south and east Asia combined).
+				</p>
+				<p>
+					Araku Valley is a hill station in Visakhapatnam district in the Indian state of Andhra Pradesh, lying 111 km west of Visakhapatnam city.
+					This place is often referred as Ooty of Andhra.
+					It is a valley in the Eastern Ghats inhabited by different tribes.
+				</p>
+				<p>
+					Kailasagiri is a hilltop park in the city of Visakhapatnam in the Indian state of Andhra Pradesh.
+					The park was developed by the Visakhapatnam Metropolitan Region Development Authority (VMRDA) and comprises 380 acres (150 ha) of land covered with flora and tropical trees.
+					The hill, at 173 metres (568 ft), overlooks the city of Visakhapatnam.
+				</p>
+				<p>
+						The Borra Caves, also called Borra Guhalu, are located on the East Coast of India, in the Ananthagiri hills of the Araku Valley (with hill ranges' elevation varying from 800 to 1,300 m (2,600 to 4,300 ft)) of the Visakhapatnam district in Andhra Pradesh.
+						The caves, one of the largest in the country, at an elevation of about 705 m (2,313 ft), distinctly exhibit a variety of speleothems ranging in size and irregularly shaped stalactites and stalagmites.						
+						The caves are basically karstic limestone structures extending to a depth of 80 m (260 ft), and are considered the deepest caves in India.
+				</p>
+				</article>	
+		</div>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() 
+			{
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) 
+				{
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+	</body>
+</html>
+
+					
+						
